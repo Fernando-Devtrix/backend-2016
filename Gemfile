@@ -31,11 +31,28 @@ gem 'devise', github: "plataformatec/devise"
 gem 'omniauth-facebook'
 #Flexbox rb
 gem 'flexbox_rb'
+#Annotate
+gem 'annotate'
+#Best in place for better edit forms
+gem "best_in_place", "~> 3.0.1"
+#Papercli para subir archivos
+gem "paperclip", "~> 5.0.0.beta1"
+#Remotipart to upload files via AJAX
+gem "remotipart",github:"urielhdz/remotipart"
+#AASM para state machines
+gem "aasm"
+#Activemodel serializers xml to work with draper
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+#Draper para nuestros decorators
+gem "draper",github:"audionerd/draper",branch:"rails5"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+	gem 'shoulda-matchers' #Metodos de ayuda específicos
+  gem 'rspec-rails',"~>  3.5.0.beta1" # Framework pruebas
+  gem "factory_girl_rails", "~> 4.0" # Nos permite crear objetos de la BD para pruebas
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end

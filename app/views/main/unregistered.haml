@@ -4,6 +4,5 @@
 			%h1.no-margin.bold.light-blue-text.no-margin FacilitoCo
 			%p.no-margin Conecta y conoce a otros alumnos de la comunidad Facilito
 			.top-space
-				Aquí va el login
-			.large-padding.text-center
-				=link_to "Crear cuenta",new_user_registration_path
+				=render "devise/registrations/new"
+			
